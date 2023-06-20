@@ -1,3 +1,6 @@
+# ignore temp folder
+temp/
+
 # Logs
 logs
 *.log
