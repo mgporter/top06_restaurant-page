@@ -20,6 +20,7 @@
   "homepage": "https://github.com/mgporter/top06_restaurant-page/tree/main#readme",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "csv-loader": "^3.0.5",
     "style-loader": "^3.3.3",
     "webpack": "^5.87.0",
     "webpack-cli": "^5.1.4",
