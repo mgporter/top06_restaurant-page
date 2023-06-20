@@ -27,14 +27,14 @@ export default function createContent() {
         const locationText = document.createElement('p');
         locationText.textContent = "Conveniently located in Jacob's crater, just 102.6km from the nearest launch site. Get there by foot, buggy, or moonworm*!";
 
-    location.appendChild(locationImg)
-    location.appendChild(locationText)
+    location.append(locationImg, locationText)
 
     const hoursTable = document.createElement('table');
     hoursTable.id = 'hours-table';
 
         const tableCaption = document.createElement('caption');
         tableCaption.textContent = 'Hours of operation'
+        hoursTable.appendChild(tableCaption)
 
     for (let time in hoursOfOperation) {
         const row = document.createElement('tr');
@@ -55,11 +55,6 @@ export default function createContent() {
     disclaimer.textContent = '*Crater Cafe not responsible for moonworm-related casualties.';
 
     const contentContainer = document.getElementById('content-container');
-    contentContainer.appendChild(subtitle);
-    contentContainer.appendChild(mainTitle);
-    contentContainer.appendChild(testimonial);
-    contentContainer.appendChild(location);
-    contentContainer.appendChild(hoursTable);
-    contentContainer.appendChild(disclaimer);
+    contentContainer.append(subtitle, mainTitle, testimonial, location, hoursTable, disclaimer);
 
 }
